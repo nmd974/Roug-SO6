@@ -10,6 +10,25 @@
  * Copyright 2011-2020 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+
+ /* .chiffre_cles{
+   width: 200px;
+   height: 200px;
+   border-radius: 100%;
+   border: 1px solid black;
+ } */
+
+ .chiffres_effect{
+   font-size: 2rem;
+ }
+ .img_chiffre{
+   width: 64px;
+   height: 64px;
+ }
+ .intitule_chiffre{
+   font-weight: 700;
+   font-size: 1.3rem;
+ }
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
