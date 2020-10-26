@@ -1,36 +1,69 @@
 $( document ).ready(function() { // Tells the function to wait to preform until everything on the page has loaded.
     $(window).scroll(function() { // Says this function is preformed continuisly while scrolling.
         var Scroll = $(window).scrollTop() + 1, // This variable finds the distance you have scrolled from the top.
-                    SectionOneOffset = $('#chiffres').offset().top, // This variable finds the distance between #section-one and the top. Replace #section-one with the ID of your section.
-                    SectionTwoOffset = $('#confiance').offset().top; // This variable finds the distance between #section-two and the top. Replace #section-two with the ID of your section. You can duplicate this for as many sections as you want.
+                    SectionOneOffset = $('#chiffres').offset().top; // This variable finds the distance between #section-two and the top. Replace #section-two with the ID of your section. You can duplicate this for as many sections as you want.
 
-        if (Scroll >= SectionOneOffset) { // If you have scrolled past section one do this.
-            console.log("COUCOU");
-            var number_trajet = document.getElementById('trajets');
-            number_trajet.innerText = "+ 20 000";
-            setTimeout("", 200);
-            number_trajet.innerText = "+ 30 000";
-            setTimeout("", 200);
-            number_trajet.innerText = "+ 40 000";
-            setTimeout("", 200);
-            number_trajet.innerText = "+ 50 000";
-            setTimeout("", 200);
-            number_trajet.innerText = "+ 60 000";
-            setTimeout("", 200);
-            number_trajet.innerText = "+ 70 000";
-            setTimeout("", 200);
-            number_trajet.innerText = "+ 80 000";
-            setTimeout("", 200);
+        if (Scroll >= SectionOneOffset) { 
+            var n_trajets = 80000;
+            var cpt_trajets = 0;
+            var trajets =  document.getElementById("trajets");
+            var delta_trajets = Math.ceil((duree * 1000) / n_trajets);
 
-            $(".menu-item-1").addClass("current-menu-item"); // Adds class of current-menu-item to the menu item with a class of menu-item-1
-        } else { // If you have not scrolled section one do this.
-            $(".menu-item-1").removeClass("current-menu-item"); // Removes class of current-menu-item to the menu item with a class of menu-item-1
-        }
-            if (Scroll >= SectionTwoOffset) { // If you have scrolled past section two do this.You can duplicate this for as many sections as you want.
-            $(".menu-item-2").addClass("current-menu-item"); // Adds class of current-menu-item to the menu item with a class of menu-item-2
-                    $(".menu-item-1").removeClass("current-menu-item"); // Removes class of current-menu-item to the menu item with a class of menu-item-1
-        } else { // If you have not scrolled section two do this.
-            $(".menu-item-2").removeClass("current-menu-item"); // Removes class of current-menu-item to the menu item with a class of menu-item-2
-        }
+            var n_vh = 230;
+            var cpt_vh = 0;
+            var vh =  document.getElementById("vehicules");
+            var delta_vh = Math.ceil((duree * 1000) / n_vh);
+
+            var n_employee = 33;
+            var cpt_employee = 0;
+            var employee =  document.getElementById("employee");
+            var delta_employee = Math.ceil((duree * 1000) / n_employee);
+
+            var n_retrait = 6;
+            var cpt_retrait = 0;
+            var retrait =  document.getElementById("retrait");
+            var delta_retrait = Math.ceil((duree * 1000) / n_retrait);
+
+            var duree = 5;
+
+            function countdown() {
+                trajets.innerHTML = `+ ${cpt_trajets += 1000}`;
+                  if( cpt_trajets < n_trajets ) {
+                     setTimeout(countdown, delta_trajets);
+                  }
+                vh.innerHTML = `${++cpt_vh}`;
+                  if( vh < n_vh ) {
+                     setTimeout(countdownVH, delta_vh);
+                  }
+                employee.innerHTML = `${++cpt_employee}`;
+                  if( employee < n_employee ) {
+                     setTimeout(countdownEmployee, delta_employee);
+                  }
+                retrait.innerHTML = `${++cpt_retrait}`;
+                  if( retrait < n_retrait ) {
+                     setTimeout(countdownRetrait, delta_retrait);
+                  }
+            }
+
+            function countdownVH() {
+                vh.innerHTML = `${++cpt_vh}`;
+                  if( vh < n_vh ) {
+                     setTimeout(countdownVH, delta_vh);
+                  }
+            }
+            function countdownEmployee() {
+                employee.innerHTML = `${++cpt_employee}`;
+                  if( employee < n_employee ) {
+                     setTimeout(countdownVH, delta_employee);
+                  }
+            }
+            function countdownRetrait() {
+                retrait.innerHTML = `${++cpt_retrait}`;
+                  if( retrait < n_retrait ) {
+                     setTimeout(countdownRetrait, delta_retrait);
+                  }
+            }
+            setTimeout(countdown, delta_trajets);
+        } 
     });
 });
