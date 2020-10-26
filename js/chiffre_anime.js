@@ -5,6 +5,7 @@ $( document ).ready(function() { // Tells the function to wait to preform until 
                     SectionTwoOffset = $('#section-two').offset().top; // This variable finds the distance between #section-two and the top. Replace #section-two with the ID of your section. You can duplicate this for as many sections as you want.
 
         if (Scroll >= SectionOneOffset) { // If you have scrolled past section one do this.
+            console.log("COUCOU");
             $('#trajets').val(() => {
                 setInterval(addNumber(1), 200)
             })
