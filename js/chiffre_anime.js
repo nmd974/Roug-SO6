@@ -5,27 +5,30 @@ $( document ).ready(function() { // Tells the function to wait to preform until 
                     SectionTwoOffset = $('#confiance').offset().top; // This variable finds the distance between #section-two and the top. Replace #section-two with the ID of your section. You can duplicate this for as many sections as you want.
 
         if (Scroll >= SectionOneOffset) { // If you have scrolled past section one do this.
-            console.log("COUCOU");
-            var number_trajet = document.getElementById('trajets');
+            
+            var number_trajet = 80000;
+            setInterval(addNumber(number_trajet), 500);
+            function addNumber(nb) {
+                
+            }
             number_trajet.innerText = "+ 20 000";
-            setTimeout("", 200);
+            setTimeout(1000);
             number_trajet.innerText = "+ 30 000";
-            setTimeout("", 200);
+            setTimeout(1000);
             number_trajet.innerText = "+ 40 000";
-            setTimeout("", 200);
+            setTimeout(1000);
             number_trajet.innerText = "+ 50 000";
-            setTimeout("", 200);
+            setTimeout(1000);
             number_trajet.innerText = "+ 60 000";
-            setTimeout("", 200);
+            setTimeout(1000);
             number_trajet.innerText = "+ 70 000";
-            setTimeout("", 200);
-            number_trajet.innerText = "+ 80 000";
-            setTimeout("", 200);
+            setTimeout(1000);
+            number_trajet.textContent = "+ 80 000";
+            setTimeout(1000);
+            console.log(number_trajet.textContent);
 
             $(".menu-item-1").addClass("current-menu-item"); // Adds class of current-menu-item to the menu item with a class of menu-item-1
-        } else { // If you have not scrolled section one do this.
-            $(".menu-item-1").removeClass("current-menu-item"); // Removes class of current-menu-item to the menu item with a class of menu-item-1
-        }
+        } 
             if (Scroll >= SectionTwoOffset) { // If you have scrolled past section two do this.You can duplicate this for as many sections as you want.
             $(".menu-item-2").addClass("current-menu-item"); // Adds class of current-menu-item to the menu item with a class of menu-item-2
                     $(".menu-item-1").removeClass("current-menu-item"); // Removes class of current-menu-item to the menu item with a class of menu-item-1
