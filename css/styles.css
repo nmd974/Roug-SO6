@@ -10147,6 +10147,12 @@ header.masthead {
 header.masthead h1 {
   font-size: 2.25rem;
 }
+
+@media (max-width: 762px){
+  header.masthead h1 {
+    font-size: 1.3rem;
+  }
+}
 @media (min-width: 992px) {
   header.masthead {
     height: 100vh;
@@ -10212,4 +10218,62 @@ header.masthead h1 {
 }
 .textadresse {
  text-align: justify;
+}
+
+.fixed{
+  background-image: url(../assets/img/fixed.jpg);
+  z-index: -1;
+}
+
+.fixed2{
+  background-image: url(../assets/img/fixed2.jpg);
+  z-index: -1;
+}
+
+.fixed-background {
+  position: relative;
+  width: 100%;
+    background-color: rgba(110, 110, 110, 0.75);
+}
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -999!important;
+}
+.fixed {
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}
+.fixed2 {
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}
+
+.greenLamp{
+  /* background-color: rgba(144, 144, 144, 0.75); */
+  color: white;
+  padding: 7rem 2rem;
+  width: 100%;
 }

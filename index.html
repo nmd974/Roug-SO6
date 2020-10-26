@@ -110,22 +110,27 @@
                     </div>
                 </section>
         <!-- About-->
-        <section class="page-section bg-primary" id="about">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-12 text-center">
-                        <h2 class="mt-0">Qui sommes nous ?</h2>
-                        <hr class="divider my-4" />
-                        <p class="text-justify mb-4">
-                            Créé en 2018, Roug’SO6 est une startup de location de véhicule électriques à destination des
-                            entreprises. Spécialisée dans les nouveaux usages liées à la mobilité, notre société propose un
-                            services adaptée aux besoins de mobilités de vos salariés à des tarifs compétitifs. Avant tout
-                            orienté vers la satisfaction du client, notre société s’efforce de proposer un service personnalisé
-                            et de qualité. Nous nous somme toujours adapté à chaque changement des habitudes de
-                            consommation de nos clients. Roug’SO6 c’est plus de 200 véhicules, de la voiture de tourisme
-                            au camion semi-remorque en passant par le vélo électrique. Tout ce qu’il faut quelque soit votre
-                            besoin ou vos envies.</p>
+        <section id="about">
+            <div class="fixed-background">
+                <div class="container greenLamp">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-12 text-center">
+                            <h2 class="mt-0">Qui sommes nous ?</h2>
+                            <hr class="divider my-4" />
+                            <p class="text-justify mb-4">
+                                Créé en 2018, Roug’SO6 est une startup de location de véhicule électriques à destination des
+                                entreprises. Spécialisée dans les nouveaux usages liées à la mobilité, notre société propose un
+                                services adaptée aux besoins de mobilités de vos salariés à des tarifs compétitifs. Avant tout
+                                orienté vers la satisfaction du client, notre société s’efforce de proposer un service personnalisé
+                                et de qualité. Nous nous somme toujours adapté à chaque changement des habitudes de
+                                consommation de nos clients. Roug’SO6 c’est plus de 200 véhicules, de la voiture de tourisme
+                                au camion semi-remorque en passant par le vélo électrique. Tout ce qu’il faut quelque soit votre
+                                besoin ou vos envies.</p>
+                        </div>
                     </div>
+                </div>
+                <div class="fixed-wrap">
+                    <div class="fixed"></div>
                 </div>
             </div>
         </div>
@@ -156,7 +161,7 @@
                     </div>
                 </div>
                 <div class="card col-md-4 offset-md-2 pt-3 " style="width: 18rem;">
-                    <div id="map"></div>
+                    <!-- <div id="map"></div> -->
                     <div class="card-body">
                         <p class="card-text">Localisation sur la carte</p>
                     </div>
@@ -164,41 +169,44 @@
             </div>
         </section>
             <!-- CHIFFRES CLES-->
-            <section class="page-section bg-primary" id="chiffres">
-                <div class="container">
-                    <h2 class="text-center mt-0">Chiffres clés</h2>
-                    <hr class="divider my-4" />
-                    <div class="row">
-                        <div class="col-12 text-center d-flex flex-wrap align-items-center justify-content-around">
-                            <div class="mt-5 col-lg-3 col-md-6 cold-sm-12">
-                                <img src="./assets/img/logo_trajet.png" alt="trajets"
-                                    class="img-fluid img_chiffre mb-2">
-                                <p class="chiffres_effect" id="trajets">0</p>
-                                <!--Classe pour effet css affichage chiffre-->
-                                <p class="intitule_chiffre">Trajets</p>
+            <section id="chiffres">
+                <div class="fixed-background">
+                    <div class="container greenLamp">
+                        <h2 class="text-center mt-0">Chiffres clés</h2>
+                        <hr class="divider my-4" />
+                        <div class="row">
+                            <div class="col-12 text-center d-flex flex-wrap align-items-center justify-content-around">
+                                <div class="mt-5 col-lg-3 col-md-6 cold-sm-12">
+                                    <img src="./assets/img/logo_trajet.png" alt="trajets"
+                                        class="img-fluid img_chiffre mb-2">
+                                    <p class="chiffres_effect" id="trajets">0</p>
+                                    <!--Classe pour effet css affichage chiffre-->
+                                    <p class="intitule_chiffre">Trajets</p>
+                                </div>
+                                <div class="mt-5 col-lg-3 col-md-6 cold-sm-12">
+                                    <img src="./assets/img/logo_flotte.png" alt="flotte" class="img-fluid img_chiffre mb-2">
+                                    <p class="chiffres_effect" id="vehicules">0</p>
+                                    <p class="intitule_chiffre">Véhicules</p>
+                                </div>
+                                <div class="mt-5 col-lg-3 col-md-6 cold-sm-12">
+                                    <img src="./assets/img/logo_employes.png" alt="employees"
+                                        class="img-fluid img_chiffre mb-2">
+                                    <p class="chiffres_effect" id="employee">0</p>
+                                    <p class="intitule_chiffre">Employés</p>
+                                </div>
+                                <div class="mt-5 col-lg-3 col-md-6 cold-sm-12">
+                                    <img src="./assets/img/logo_points.png" alt="point retrait"
+                                        class="img-fluid img_chiffre mb-2">
+                                    <p class="chiffres_effect" id="retrait">0</p>
+                                    <p class="intitule_chiffre">Points retraits</p>
+                                </div>
                             </div>
-                            <div class="mt-5 col-lg-3 col-md-6 cold-sm-12">
-                                <img src="./assets/img/logo_flotte.png" alt="flotte" class="img-fluid img_chiffre mb-2">
-                                <p class="chiffres_effect" id="vehicules">0</p>
-                                <p class="intitule_chiffre">Véhicules</p>
-                            </div>
-                            <div class="mt-5 col-lg-3 col-md-6 cold-sm-12">
-                                <img src="./assets/img/logo_employes.png" alt="employees"
-                                    class="img-fluid img_chiffre mb-2">
-                                <p class="chiffres_effect" id="employee">0</p>
-                                <p class="intitule_chiffre">Employés</p>
-                            </div>
-                            <div class="mt-5 col-lg-3 col-md-6 cold-sm-12">
-                                <img src="./assets/img/logo_points.png" alt="point retrait"
-                                    class="img-fluid img_chiffre mb-2">
-                                <p class="chiffres_effect" id="retrait">0</p>
-                                <p class="intitule_chiffre">Points retraits</p>
+                            <div class="fixed-wrap">
+                                <div class="fixed2"></div>
                             </div>
                         </div>
-
                     </div>
                 </div>
-            </div>
         </section>
 
         <section class="page-section"  id="confiance"  >
@@ -259,10 +267,10 @@
                                 <label for="nom" class="col-4 col-lg-2 text-left">Message : *</label>
                                 <textarea class="form-control col-lg-5 col-8" aria-label="With textarea" required pattern="[a-zA-Z0-9\s]+"></textarea>
                             </div>
-                            <div class="row col-12 text-center d-flex justify-content-center mt-5">
+                            <div class="row col-12 text-center d-flex justify-content-center mt-5 ml-1">
                                 <button type="submit" href="#" class="btn btn-primary">J'envoie</a>
                             </div>
-                            <div class="row col-12 text-center d-flex justify-content-center">
+                            <div class="row col-12 text-center d-flex justify-content-center ml-1">
                                 <p class="mt-5"><em>Les données saisies sont enregistrées dans le but de répondre à votre demande
                                     et de vous tenir informé des nouveautés. Vous pouvez à tout moment nous contacter afin de supprimer
                                     votre passage sur notre site.</em>
