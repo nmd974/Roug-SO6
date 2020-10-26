@@ -17,13 +17,7 @@
    border-radius: 100%;
    border: 1px solid black;
  } */
- #map{ /* la carte DOIT avoir une hauteur sinon elle n'apparaît pas */
-  height:350px;
-  width: 350px;
-}
-.textadresse {
- text-align: justify;
-}
+ 
 
  .chiffres_effect{
    font-size: 2rem;
