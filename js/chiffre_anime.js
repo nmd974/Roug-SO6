@@ -6,7 +6,22 @@ $( document ).ready(function() { // Tells the function to wait to preform until 
 
         if (Scroll >= SectionOneOffset) { // If you have scrolled past section one do this.
             console.log("COUCOU");
-            
+            var number_trajet = document.getElementById('trajets');
+            number_trajet.innerText = "+ 20 000";
+            setTimeout("", 200);
+            number_trajet.innerText = "+ 30 000";
+            setTimeout("", 200);
+            number_trajet.innerText = "+ 40 000";
+            setTimeout("", 200);
+            number_trajet.innerText = "+ 50 000";
+            setTimeout("", 200);
+            number_trajet.innerText = "+ 60 000";
+            setTimeout("", 200);
+            number_trajet.innerText = "+ 70 000";
+            setTimeout("", 200);
+            number_trajet.innerText = "+ 80 000";
+            setTimeout("", 200);
+
             $(".menu-item-1").addClass("current-menu-item"); // Adds class of current-menu-item to the menu item with a class of menu-item-1
         } else { // If you have not scrolled section one do this.
             $(".menu-item-1").removeClass("current-menu-item"); // Removes class of current-menu-item to the menu item with a class of menu-item-1
