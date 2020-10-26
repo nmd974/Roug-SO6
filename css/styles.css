@@ -10,6 +10,17 @@
  * Copyright 2011-2020 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+/*taille de la carte*/
+
+#map{ /* la carte DOIT avoir une hauteur sinon elle n'apparaît pas */
+  height:350px;
+  width: 350px;
+}
+.textadresse {
+ text-align: justify;
+}
+
+
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
