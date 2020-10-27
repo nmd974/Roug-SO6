@@ -10213,8 +10213,9 @@ header.masthead h1 {
   color: rgba(255, 255, 255, 0.75);
 }
 #map{ /* la carte DOIT avoir une hauteur sinon elle n'apparaît pas */
-  height:350px;
-  width: 350px;
+  height:100%;
+  width: 100%;
+  min-height: 350px;
 }
 .textadresse {
  text-align: justify;
