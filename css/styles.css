@@ -10281,3 +10281,10 @@ header.masthead h1 {
 
  /* responsive formulaire contact*/
  
+ @media (min-width: 700px) {
+ #texte{
+ margin-left: 32px;
+
+ }
+
+ }
