@@ -6,7 +6,7 @@ $(document).ready(() => {
     for (let i = 0; i < form_control.length; i++) {
         const element = form_control[i];
         element.addEventListener('change', (event) => {
-            if(pattern.test(event.target.value)){
+            if(!pattern.test(event.target.value)){
                 form_validation = false;
                 element.setCustomValidity("Veuillez ne pas saisir de script")
             }
