@@ -6,7 +6,8 @@ $( document ).ready(function() { // Tells the function to wait to preform until 
         var Scroll = $(window).scrollTop() + 1, // This variable finds the distance you have scrolled from the top.
                     SectionOneOffset = $('#chiffres').offset().top; // This variable finds the distance between #section-two and the top. Replace #section-two with the ID of your section. You can duplicate this for as many sections as you want.
         if (Scroll >= SectionOneOffset && compteur > 0) { 
-            compteur = 0;    
+            compteur = 0; 
+              
 
             var n_trajets = 80000;
             var cpt_trajets = 0;
