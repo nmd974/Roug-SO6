@@ -10282,8 +10282,16 @@ header.masthead h1 {
  /* responsive formulaire contact*/
  
  @media (max-width: 768px) {
- #texte{
- margin-left: 32px;
+  .margetexte{
+ padding-left: 50px;
+
+ }
+
+ }
+
+ @media (max-width: 375px) {
+  .margetexte{
+ padding-left: 20px;
 
  }
 
