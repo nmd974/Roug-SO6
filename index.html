@@ -135,7 +135,7 @@
                     </div>
                 </div>
                 <div class="fixed-wrap">
-                    <div class="fixed"></div>
+                    <div class="fixed" id="wherebefore"></div>
                 </div>
             </div>
         </div>
@@ -148,7 +148,7 @@
             <hr class="divider my-4" />
 
             <div class="row d-flex justify-content-around">
-                <div class="card col-lg-4 col-md-5 col-12 pt-3 mt-3 "  style="width: 16rem;">
+                <div class="card col-lg-4 col-md-5 col-12 pt-3 mt-3 " data-aos="fade-right"  style="width: 16rem;">
                     <p class="textadresse">Partout sur l’Ile et tout le temps avec une connection internet vous pourrez
                         accéder aux
                         différents véhicules disponibles en fonction de vos besoins et réserver. Nous avons des points
@@ -165,7 +165,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="card col-lg-4 col-md-5 col-12 pt-3 mt-3 " style="width: 16rem;">
+                <div class="card col-lg-4 col-md-5 col-12 pt-3 mt-3" data-aos="fade-left" style="width: 16rem;">
                     <div id="map"></div>
                     <div class="card-body">
                         <p class="card-text">Localisation sur la carte</p>
@@ -252,25 +252,26 @@
                     <hr class="divider my-4" />
                         <form>
                             <div class="row d-flex justify-content-center align-items-center mt-5">
-                                <label for="nom" class="col-6 col-lg-2 text-left">Nom : *</label>
-                                <input type="text" class="form-control col-lg-5 col-8" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" required pattern="[A-Za-z' -]+">
+                                <label  id ="texte" for="nom" class="col-12 col-lg-2 text-left ml-4">Nom : *</label>
+                                <input type="text" class="form-control col-lg-5 col-10" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" required pattern="[A-Za-z' -]+">
+                            </div>
+                            <div  class="row d-flex justify-content-center align-items-center mt-5">
+                                <label for="nom" class="col-12 col-lg-2 text-left ml-4">Prénom : </label>
+                                <input type="text" class="form-control col-lg-5 col-10" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"  pattern="[A-Za-z' -]+">
                             </div>
                             <div class="row d-flex justify-content-center align-items-center mt-5">
-                                <label for="nom" class="col-6 col-lg-2 text-left">Prénom : </label>
-                                <input type="text" class="form-control col-lg-5 col-8" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"  pattern="[A-Za-z' -]+">
-                            </div>
-                            <div class="row d-flex justify-content-center align-items-center mt-5">
-                                <label for="nom" class="col-6 col-lg-2 text-left">Email : *</label>
-                                <input type="email" class="form-control col-lg-5 col-8" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" required
+                                <label id ="texte" for="nom" class="col-12 col-lg-2 text-left ml-4">Email : *</label>
+                                <input type="email" class="form-control col-lg-5 col-10" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" required
                                 pattern="[A-Za-z0-9](([.-]?[a-zA-Z0-9]+)*)@([A-Za-z0-9]+)(([.-]?[a-zA-Z0-9]+)*).([A-Za-z]{2,})">
                             </div>
-                            <div class="row d-flex justify-content-center align-items-center mt-5">
-                                <label for="nom" class="col-6 col-lg-2 text-left">Entreprise : *</label>
-                                <input type="text" class="form-control col-lg-5 col-8" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" required pattern="[a-zA-Z0-9\s]+">
+
+                           <div class="row d-flex justify-content-center align-items-center mt-5">
+                                <label id ="texte" for="nom" class="col-12 col-lg-2 text-left ml-4">Entreprise : *</label>
+                                <input type="text" class="form-control col-lg-5 col-10" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" required pattern="[a-zA-Z0-9\s]+">
                             </div>
                             <div class="row d-flex justify-content-center align-items-center mt-5">
-                                <label for="nom" class="col-6 col-lg-2 text-left">Message : *</label>
-                                <textarea class="form-control col-lg-5 col-8" aria-label="With textarea" required pattern="[a-zA-Z0-9\s]+"></textarea>
+                                <label id ="texte" for="nom" class="col-12 col-lg-2 text-left ml-4" >Message : *</label>
+                                <textarea class="form-control col-lg-5 col-10 " aria-label="With textarea" required pattern="[a-zA-Z0-9\s]+"></textarea>
                             </div>
                             <div class="row col-12 text-center d-flex justify-content-center mt-5 ml-1">
                                 <button type="submit" href="#" class="btn btn-primary">J'envoie</a>
@@ -306,6 +307,7 @@
             <script src="./js/chiffre_anime.js"></script>
             <script src="./js/formulaire.js"></script>
             <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+            <script src="js/animationcard.js"></script>
 </body>
 
 </html>
